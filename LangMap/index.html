@@ -126,8 +126,48 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
+
+<!-- ABSTRACT -->
+<section class="section hero is-light">
+  <div class="container is-fluid">
+
+    <div class="columns is-vcentered is-centered">
+
+      <!-- ABSTRACT -->
+      <div class="column is-3">
+        <h2 class="title is-4">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We introduce HieraNav, a multi-granularity, open-vocabulary goal navigation task where agents interpret natural language instructions to reach targets at four semantic levels: scene, room, region, and instance.
+          </p>
+            <p>
+            We present Language as a Map (LangMap), a large-scale benchmark built on real-world 3D indoor scans with comprehensive human-verified annotations and tasks spanning these levels. LangMap provides region labels, discriminative region descriptions, discriminative instance descriptions covering 414 object categories, and over 18K navigation tasks. Each target features both concise and detailed descriptions, enabling evaluation across different instruction styles.
+          </p>
+            <p>
+            LangMap achieves superior annotation quality, outperforming GOAT-Bench by 23.8% in discriminative accuracy using four times fewer words. Comprehensive evaluations of zero-shot and supervised models on LangMap reveal that richer context and memory improve success, while long-tailed, small, context-dependent, and distant goals, as well as multi-goal completion, remain challenging.
+          </p>
+        </div>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="column is-4 has-text-centered">
+        <img src="./static/images/hieranav_framework.png"
+             style="width:100%; height:auto;"
+             alt="framework"/>
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <img src="./static/images/hieranav_framework.png"
@@ -138,9 +178,7 @@
     </div>
   </div>
 </section>
-<!-- End teaser video -->
 
-<!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -155,8 +193,40 @@
       </div>
     </div>
   </div>
+</section> -->
+
+
+
+
+
+
+
+
+
+
+<!-- Teaser -->
+<section class="hero teaser mt-6">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <h2 class="title is-3 mb-5" style="white-space: nowrap;">Qualitative Comparison: LangMap vs. GOAT-Bench Annotations</h2>
+      <figure>
+        <figcaption class="is-size-5 mt-2 has-text-black">
+          Figure 1.
+            <span style="color: blue; font-weight:600;">Blue</span> indicates semantic errors and
+            <span style="color: green; font-weight:600;">green</span> indicates ambiguous descriptions.
+        </figcaption>
+        <img src="./static/images/goat_bench_error.png" class="interpolation-image"/>
+      </figure>
+<!--       <img src="./static/images/goat_bench_error.png" class="interpolation-image"/> -->
+    </div>
+  </div>
 </section>
-<!-- End paper abstract -->
+
+<!-- End teaser -->
+
+
+
+
 
 
   <!-- Qualitative Examples -->
