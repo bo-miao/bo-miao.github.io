@@ -153,3 +153,59 @@ video::-webkit-media-controls-mute-button {
     box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
     padding: 1rem;
 }
+
+.affiliations {
+  color: #3273dc;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.affiliations .author-block {
+  margin-left: 0.35rem;
+  margin-right: 0.35rem;
+}
+
+.highlight-grid {
+  margin-top: 1rem;
+}
+
+.highlight-item {
+  height: 100%;
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+  padding: 1.1rem;
+  text-align: left;
+  background: #ffffff;
+}
+
+.highlight-item .icon {
+  color: #3273dc;
+  margin-bottom: 0.75rem;
+}
+
+.highlight-item p {
+  margin-bottom: 0;
+}
+
+.task-demo {
+  margin-bottom: 1.5rem;
+}
+
+.task-list {
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comparison-image {
+  max-height: 760px;
+  object-fit: contain;
+}
+
+.planavid-video {
+  display: block;
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+  background: #000000;
+}
