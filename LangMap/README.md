@@ -33,7 +33,7 @@ LangMap introduces HieraNav, a hierarchical open-vocabulary goal navigation task
   author    = {Miao, Bo and Liu, Weijia and Luo, Jun and Shinnick, Lachlan and Liu, Jian and
                Hamilton-Smith, Thomas and Yang, Yuhe and Wu, Zijie and Videnovic, Vanja and
                Dayoub, Feras and van den Hengel, Anton},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS), Evaluations and Datasets Track},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
   year      = {2026}
 }
 ```
