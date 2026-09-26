@@ -12,34 +12,25 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="LangMap is a human-verified benchmark for hierarchical open-vocabulary goal navigation across object, room, region, and instance levels.">
-  <meta name="keywords" content="LangMap, HieraNav, hierarchical goal navigation, open-vocabulary navigation, embodied AI, visual navigation, HM3D">
+  <meta name="description" content="LangMap (NeurIPS 2026, Evaluations &amp; Datasets Track) is a human-verified benchmark for hierarchical open-vocabulary goal navigation across object, room, region, and instance levels.">
+  <meta name="keywords" content="LangMap, HieraNav, hierarchical goal navigation, open-vocabulary navigation, embodied AI, visual navigation, HM3D, NeurIPS 2026">
+  <link rel="canonical" href="https://bo-miao.github.io/LangMap/">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="LangMap: A Human-Verified Benchmark for Hierarchical Open-Vocabulary Goal Navigation">
-  <meta property="og:description" content="Human-verified language annotations and navigation tasks for hierarchical open-vocabulary goal navigation.">
+  <meta property="og:description" content="NeurIPS 2026 (Evaluations &amp; Datasets Track). Human-verified language annotations and navigation tasks for hierarchical open-vocabulary goal navigation.">
   <meta property="og:url" content="https://bo-miao.github.io/LangMap/">
-  <meta property="og:image" content="https://bo-miao.github.io/LangMap/static/images/hieranav_framework.png">
+  <meta property="og:image" content="https://bo-miao.github.io/LangMap/static/images/og_langmap.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:title" content="LangMap: A Human-Verified Benchmark for Hierarchical Open-Vocabulary Goal Navigation">
-  <meta name="twitter:description" content="Human-verified language annotations and navigation tasks for hierarchical open-vocabulary goal navigation.">
-  <meta name="twitter:image" content="https://bo-miao.github.io/LangMap/static/images/hieranav_framework.png">
+  <meta name="twitter:description" content="NeurIPS 2026 (Evaluations &amp; Datasets Track). Human-verified language annotations and navigation tasks for hierarchical open-vocabulary goal navigation.">
+  <meta name="twitter:image" content="https://bo-miao.github.io/LangMap/static/images/og_langmap.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
   <title>LangMap: A Human-Verified Benchmark for Hierarchical Open-Vocabulary Goal Navigation</title>
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
 </head>
 <body>
   <section class="hero publication-header">
@@ -48,6 +39,8 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">LangMap: A Human-Verified Benchmark for Hierarchical Open-Vocabulary Goal Navigation</h1>
+
+            <p class="venue-badge"><span>NeurIPS 2026</span><span class="venue-sep"> · </span><span>Evaluations &amp; Datasets Track</span></p>
 
             <div class="is-size-5 publication-authors">
               <span class="author-block">Bo Miao<sup>1</sup>,</span>
@@ -63,7 +56,7 @@
               <span class="author-block">Anton van den Hengel<sup>1</sup></span>
             </div>
 
-            <div class="is-size-6 publication-authors affiliations" style="color:#3273dc;">
+            <div class="is-size-6 publication-authors affiliations">
               <span class="author-block"><sup>1</sup>AIML, University of Adelaide</span>
               <span class="author-block"><sup>2</sup>East China Normal University</span>
               <span class="author-block"><sup>3</sup>NERC-RVC, Hunan University</span>
@@ -73,21 +66,27 @@
 
             <div class="publication-links">
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2602.02220" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="ai ai-arxiv"></i></span>
-                  <span>arXiv</span>
+                <a href="https://arxiv.org/abs/2602.02220" target="_blank" rel="noopener" class="button is-normal is-rounded is-dark">
+                  <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></span>
+                  <span>Paper</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://github.com/bo-miao/LangMap" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="fab fa-github"></i></span>
+                <a href="https://github.com/bo-miao/LangMap" target="_blank" rel="noopener" class="button is-normal is-rounded is-dark">
+                  <span class="icon"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg></span>
                   <span>Data and Code</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://huggingface.co/spaces/bo-miao/LangMap" target="_blank" class="external-link button is-normal is-rounded is-primary">
-                  <span class="icon"><i class="fas fa-play"></i></span>
+                <a href="https://huggingface.co/spaces/bo-miao/LangMap" target="_blank" rel="noopener" class="button is-normal is-rounded is-dark">
+                  <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.14v13.72a1 1 0 0 0 1.52.85l10.9-6.86a1 1 0 0 0 0-1.7L9.52 4.29A1 1 0 0 0 8 5.14Z"/></svg></span>
                   <span>Interactive Visualization</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#BibTeX" class="button is-normal is-rounded is-dark">
+                  <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 17h3l2-4V7H5v6h3l-2 4Zm8 0h3l2-4V7h-6v6h3l-2 4Z"/></svg></span>
+                  <span>BibTeX</span>
                 </a>
               </span>
             </div>
@@ -100,7 +99,7 @@
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <img src="./static/images/hieranav_framework.png" class="interpolation-image" alt="LangMap and HieraNav benchmark framework">
+        <img src="./static/images/hieranav_framework.webp" class="interpolation-image" width="1920" height="1015" alt="LangMap and HieraNav benchmark framework">
       </div>
     </div>
   </section>
@@ -134,19 +133,19 @@
           <div class="columns highlight-grid">
             <div class="column">
               <div class="highlight-item">
-                <span class="icon"><i class="fas fa-layer-group"></i></span>
+                <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m12 2 10 5-10 5L2 7l10-5ZM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
                 <p>Object, room, region, instance, and mixed-level multi-goal navigation.</p>
               </div>
             </div>
             <div class="column">
               <div class="highlight-item">
-                <span class="icon"><i class="fas fa-check-circle"></i></span>
+                <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 11.08V12a10 10 0 1 1-5.93-9.14M22 4 12 14.01l-3-3"/></svg></span>
                 <p>Human-verified semantic labels and discriminative language annotations.</p>
               </div>
             </div>
             <div class="column">
               <div class="highlight-item">
-                <span class="icon"><i class="fas fa-database"></i></span>
+                <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></g></svg></span>
                 <p>All HM3D-Sem validation scenes and over 400 open-vocabulary object categories.</p>
               </div>
             </div>
@@ -161,7 +160,7 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-11">
           <h2 class="title is-3">Task Levels</h2>
-          <img src="./static/images/Fig1_demo.jpg" class="interpolation-image task-demo" alt="Examples of object, room, region, and instance navigation goals">
+          <img src="./static/images/Fig1_demo.webp" class="interpolation-image task-demo" width="1720" height="841" loading="lazy" alt="Examples of object, room, region, and instance navigation goals">
           <div class="content has-text-left task-list">
             <p><strong>Object:</strong> find any object of the target category, such as "Find the armchair."</p>
             <p><strong>Room:</strong> find the target object category in a room type, such as "Find the armchair in the bedroom."</p>
@@ -178,10 +177,10 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-11">
           <h2 class="title is-3">PlaNaVid Visualization</h2>
-          <video class="planavid-video" controls muted loop playsinline preload="metadata">
+          <video class="planavid-video" controls muted loop playsinline preload="metadata" poster="./static/images/planavid_poster.jpg" width="1920" height="720">
             <source src="./static/videos/PlaNaVid_Multigoal_Navigation.mp4" type="video/mp4">
           </video>
-          <p class="is-size-6 mt-3">
+          <p class="is-size-6 mt-3 caption">
             Qualitative example of PlaNaVid on multi-goal navigation.
           </p>
         </div>
@@ -194,10 +193,13 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-11">
           <h2 class="title is-3">Annotation Quality</h2>
-          <figure>
-            <img src="./static/images/goat_bench_error.png" class="interpolation-image comparison-image" alt="Qualitative comparison between LangMap and GOAT-Bench annotations">
-            <figcaption class="is-size-6 mt-3">
+          <figure class="comparison-figure">
+            <a href="./static/images/goat_bench_error.png" target="_blank" rel="noopener" title="Open full-resolution figure">
+              <img src="./static/images/goat_bench_error.webp" class="interpolation-image comparison-image" width="1600" height="1990" loading="lazy" alt="Qualitative comparison between LangMap and GOAT-Bench annotations">
+            </a>
+            <figcaption class="is-size-6 mt-3 caption">
               Qualitative comparison of LangMap and GOAT-Bench annotations. Blue marks semantic errors, and green marks ambiguous descriptions.
+              <a href="./static/images/goat_bench_error.png" target="_blank" rel="noopener">View full resolution</a>.
             </figcaption>
           </figure>
         </div>
@@ -207,12 +209,17 @@
 
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@article{miao2026langmap,
-  title = {LangMap: A Hierarchical Benchmark for Open-Vocabulary Goal Navigation},
-  author = {Bo Miao and Weijia Liu and Jun Luo and Lachlan Shinnick and Jian Liu and Thomas Hamilton-Smith and Yuhe Yang and Zijie Wu and Vanja Videnovic and Feras Dayoub and {Anton van den} Hengel},
-  journal = {arXiv preprint arXiv:2602.02220},
-  year = {2026}
+      <div class="bibtex-head">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-button" type="button" data-copy-target="bibtex-code">Copy</button>
+      </div>
+      <pre class="bibtex"><code id="bibtex-code">@inproceedings{miao2026langmap,
+  title     = {LangMap: A Human-Verified Benchmark for Hierarchical Open-Vocabulary Goal Navigation},
+  author    = {Miao, Bo and Liu, Weijia and Luo, Jun and Shinnick, Lachlan and Liu, Jian and
+               Hamilton-Smith, Thomas and Yang, Yuhe and Wu, Zijie and Videnovic, Vanja and
+               Dayoub, Feras and van den Hengel, Anton},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS), Evaluations and Datasets Track},
+  year      = {2026}
 }</code></pre>
     </div>
   </section>
@@ -223,12 +230,32 @@
         <div class="column is-8">
           <div class="content">
             <p>
-              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>, adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener">Academic Project Page Template</a>, adopted from the <a href="https://nerfies.github.io" target="_blank" rel="noopener">Nerfies</a> project page.
             </p>
           </div>
         </div>
       </div>
     </div>
   </footer>
+
+  <script>
+    // Copy the BibTeX entry to the clipboard.
+    document.querySelectorAll('[data-copy-target]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        var text = document.getElementById(button.getAttribute('data-copy-target')).textContent;
+        var done = function () {
+          button.textContent = 'Copied';
+          setTimeout(function () { button.textContent = 'Copy'; }, 1500);
+        };
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(text).then(done);
+        } else {
+          var area = document.createElement('textarea');
+          area.value = text; document.body.appendChild(area); area.select();
+          document.execCommand('copy'); document.body.removeChild(area); done();
+        }
+      });
+    });
+  </script>
 </body>
 </html>
