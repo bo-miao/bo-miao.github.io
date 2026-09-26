@@ -1,2 +1,497 @@
-<h1>Bo Miao Projects</h1>
-<a href="/LangMap/">Go to LangMap</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bo Miao (苗博) · Postdoctoral Researcher, AIML, Adelaide University</title>
+<meta name="description" content="Bo Miao is a postdoctoral researcher at the Australian Institute for Machine Learning (AIML), Adelaide University, working on embodied AI, vision-and-language, and video understanding.">
+<meta name="keywords" content="Bo Miao, 苗博, Miao Bo, embodied AI, vision-and-language, video understanding, AIML, Adelaide University">
+<meta name="author" content="Bo Miao">
+<link rel="canonical" href="https://bo-miao.github.io/">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141517" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Bo Miao (苗博)">
+<meta property="og:description" content="Postdoctoral researcher at AIML, Adelaide University. Embodied AI, vision-and-language, and video understanding.">
+<meta property="og:url" content="https://bo-miao.github.io/">
+<meta property="og:image" content="https://bo-miao.github.io/images/web/profile.jpg">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d4e89'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='30' font-weight='700' fill='white'%3EBM%3C/text%3E%3C/svg%3E">
+
+<!-- Fonts load without blocking rendering; the system serif is used until (or if) they arrive. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@400;500;600&display=swap"></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Bo Miao",
+  "alternateName": "苗博",
+  "jobTitle": "Postdoctoral Researcher",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Australian Institute for Machine Learning (AIML), Adelaide University"
+  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "The University of Western Australia" },
+    { "@type": "CollegeOrUniversity", "name": "University of Jinan" }
+  ],
+  "email": "mailto:bomiaobbb@gmail.com",
+  "url": "https://bo-miao.github.io/",
+  "image": "https://bo-miao.github.io/images/web/profile.jpg",
+  "sameAs": [
+    "https://scholar.google.com/citations?user=AJnEdGoAAAAJ",
+    "https://github.com/bo-miao"
+  ],
+  "knowsAbout": ["Embodied AI", "Vision-and-Language", "Video Understanding", "Human-Computer Interaction", "Computer Vision"]
+}
+</script>
+
+<style>
+:root {
+  --bg: #ffffff;
+  --text: #1c1c1e;
+  --muted: #55595f;
+  --faint: #7c8189;
+  --rule: #e7e6e3;
+  --accent: #1d4e89;
+  --accent-strong: #123a69;
+  --tag-bg: #edf2f8;
+  --tag-text: #1d4e89;
+  --hl-bg: #fbefe3;
+  --hl-text: #9a4a10;
+  --thumb-bg: #ffffff;
+  --thumb-border: #e7e6e3;
+  --nav-bg: rgba(255, 255, 255, .86);
+  --shade: rgba(0, 0, 0, .13);
+  --serif: "Source Serif 4", "Source Serif Pro", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Songti SC", "Noto Serif CJK SC", serif;
+  --sans: "Source Sans 3", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --cjk: "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", var(--serif);
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141517;
+    --text: #e7e5e0;
+    --muted: #a9adb3;
+    --faint: #858a92;
+    --rule: #2b2d31;
+    --accent: #8fb4e8;
+    --accent-strong: #b8d0f3;
+    --tag-bg: #1d2735;
+    --tag-text: #a9c6ee;
+    --hl-bg: #36271b;
+    --hl-text: #f0b98a;
+    --thumb-bg: #f5f4f1;
+    --thumb-border: #2b2d31;
+    --nav-bg: rgba(20, 21, 23, .86);
+    --shade: rgba(0, 0, 0, .55);
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 400 17px/1.65 var(--serif);
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+a { color: var(--accent); text-decoration: none; text-underline-offset: .18em; text-decoration-thickness: 1px; }
+a:hover { color: var(--accent-strong); text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+::selection { background: var(--tag-bg); }
+img { max-width: 100%; }
+
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+.skip { position: absolute; left: -9999px; top: 8px; background: var(--bg); padding: 6px 10px; z-index: 20; }
+.skip:focus { left: 12px; }
+
+/* ---------- Navigation ---------- */
+.site-nav {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--nav-bg);
+  -webkit-backdrop-filter: saturate(160%) blur(10px);
+  backdrop-filter: saturate(160%) blur(10px);
+  border-bottom: 1px solid var(--rule);
+}
+.site-nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 54px; }
+.brand { font-weight: 600; font-size: 1.08rem; color: var(--text); letter-spacing: .01em; }
+.brand:hover { color: var(--text); text-decoration: none; }
+.nav-links { display: flex; gap: 22px; font-family: var(--sans); font-size: .93rem; }
+.nav-links a { color: var(--muted); padding: 4px 0; }
+.nav-links a:hover { color: var(--text); text-decoration: none; }
+.nav-links a.active { color: var(--text); box-shadow: inset 0 -1.5px 0 var(--accent); }
+
+/* ---------- About ---------- */
+.hero { display: grid; grid-template-columns: 1fr 180px; gap: 44px; align-items: start; padding-top: 56px; }
+.hero h1 { font-size: 2.35rem; line-height: 1.15; font-weight: 600; letter-spacing: -.005em; margin: 0 0 10px; }
+.hero h1 .zh { font-family: var(--cjk); font-size: 1.3rem; font-weight: 400; color: var(--muted); letter-spacing: .08em; margin-left: 10px; }
+.role { margin: 0 0 14px; color: var(--muted); font-size: 1.02rem; line-height: 1.5; }
+.role b { color: var(--text); font-weight: 600; }
+.profile-links { display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 0 0 22px; font-family: var(--sans); font-size: .95rem; }
+.profile-links a { display: inline-flex; align-items: center; gap: 6px; }
+.profile-links svg { width: 1em; height: 1em; flex: none; }
+.bio p { margin: 0 0 14px; }
+.bio b { font-weight: 600; }
+.bio .note { color: var(--muted); font-style: italic; }
+.portrait {
+  display: block; width: 180px; height: auto; aspect-ratio: 4 / 5; object-fit: cover;
+  border-radius: 8px; border: 1px solid var(--rule); margin-top: 6px;
+}
+
+/* ---------- Sections ---------- */
+.section { padding-top: 44px; scroll-margin-top: 58px; }
+#about { scroll-margin-top: 58px; }
+.section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--rule); margin-bottom: 14px; }
+.section h2 { font-size: 1.42rem; font-weight: 600; letter-spacing: .005em; margin: 0; padding-bottom: 8px; }
+.section-note { margin: 0; font-family: var(--sans); font-size: .88rem; color: var(--faint); white-space: nowrap; }
+
+/* News */
+.news {
+  list-style: none; margin: 0; padding: 0 10px 0 0;
+  max-height: 19rem; overflow-y: auto;
+  scrollbar-width: thin; scrollbar-color: var(--rule) transparent;
+  /* shadows appear only where more items are hidden above/below */
+  background:
+    linear-gradient(var(--bg) 30%, transparent) top / 100% 24px no-repeat local,
+    linear-gradient(transparent, var(--bg) 70%) bottom / 100% 24px no-repeat local,
+    radial-gradient(farthest-side at 50% 0, var(--shade), transparent) top / 100% 10px no-repeat scroll,
+    radial-gradient(farthest-side at 50% 100%, var(--shade), transparent) bottom / 100% 10px no-repeat scroll;
+  background-color: var(--bg);
+}
+.news:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.news::-webkit-scrollbar { width: 6px; }
+.news::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 3px; }
+.news li { display: grid; grid-template-columns: 82px 1fr; gap: 14px; padding: 5px 0; }
+.news time { font-family: var(--sans); font-size: .88rem; color: var(--faint); padding-top: 3px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.news b { font-weight: 600; }
+
+/* Publications */
+.pubs { list-style: none; margin: 0; padding: 0; }
+.pub { display: grid; grid-template-columns: 220px 1fr; gap: 24px; padding: 18px 0; border-top: 1px solid var(--rule); }
+.pub:first-child { border-top: 0; padding-top: 6px; }
+.pub-thumb {
+  margin: 0; width: 220px; aspect-ratio: 2 / 1; padding: 6px;
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
+  background: var(--thumb-bg); border: 1px solid var(--thumb-border); border-radius: 6px;
+}
+.pub-thumb img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.pub-title { font-size: 1.03rem; font-weight: 600; line-height: 1.4; margin: 0 0 4px; }
+.pub-authors { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.5; }
+.pub-authors b { color: var(--text); font-weight: 600; }
+.pub-venue { margin: 5px 0 0; color: var(--muted); font-size: .95rem; line-height: 1.5; }
+.tag, .badge {
+  display: inline-block; font: 600 .76rem/1.6 var(--sans); letter-spacing: .02em;
+  padding: 0 7px; border-radius: 4px; vertical-align: 1px; white-space: nowrap;
+}
+.tag { background: var(--tag-bg); color: var(--tag-text); margin-right: 8px; }
+.badge { background: var(--hl-bg); color: var(--hl-text); margin-left: 8px; }
+.pub-links { display: flex; flex-wrap: wrap; gap: 2px 16px; margin: 6px 0 0; font-family: var(--sans); font-size: .9rem; }
+
+
+/* Honors, service, education */
+.plain { list-style: none; margin: 0; padding: 0; }
+.plain li { padding: 5px 0 5px 18px; position: relative; }
+.plain li::before { content: ""; position: absolute; left: 2px; top: .95em; width: 5px; height: 5px; border-radius: 50%; background: var(--faint); }
+.plain .aside { color: var(--muted); }
+.plain b { font-weight: 600; }
+.rows { margin: 0; }
+.rows > div { display: grid; grid-template-columns: 200px 1fr; gap: 16px; padding: 5px 0; }
+.rows dt { font-weight: 600; color: var(--text); }
+.rows dd { margin: 0; }
+.rows .aside { color: var(--muted); }
+
+.site-footer { margin-top: 56px; padding-bottom: 40px; font-family: var(--sans); font-size: .85rem; color: var(--faint); }
+.site-footer p { margin: 0; padding-top: 18px; border-top: 1px solid var(--rule); }
+
+/* ---------- Small screens ---------- */
+@media (max-width: 700px) {
+  body { font-size: 16.5px; }
+  .wrap { padding: 0 16px; }
+  .brand { display: none; }
+  .site-nav .wrap { justify-content: center; }
+  .nav-links { gap: 18px; font-size: .9rem; }
+  .hero { grid-template-columns: 1fr; gap: 18px; padding-top: 28px; }
+  .portrait { order: -1; width: 124px; margin-top: 0; }
+  .hero h1 { font-size: 2rem; }
+  .pub { grid-template-columns: 1fr; gap: 12px; }
+  .pub-thumb { width: 100%; max-width: 480px; aspect-ratio: 12 / 5; }
+  .news { max-height: 24rem; }
+  .news li { grid-template-columns: 1fr; gap: 0; padding: 7px 0; }
+  .news time { padding-top: 0; }
+  .rows > div { grid-template-columns: 1fr; gap: 0; padding: 7px 0; }
+  .section-head { flex-direction: column; align-items: flex-start; gap: 0; padding-bottom: 8px; }
+  .section h2 { padding-bottom: 2px; }
+}
+
+@media print {
+  .site-nav, .skip { display: none; }
+  .news { max-height: none; overflow: visible; background: none; }
+  body { font-size: 11pt; }
+  a { color: inherit; }
+  .pub { break-inside: avoid; }
+  .pub-thumb { width: 150px; }
+  .pub { grid-template-columns: 150px 1fr; }
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="site-nav" aria-label="Primary">
+  <div class="wrap">
+    <a class="brand" href="#about">Bo Miao</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#honours">Honours</a>
+      <a href="#service">Service</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ================= About ================= -->
+<header class="wrap hero" id="about">
+  <div>
+    <h1>Bo Miao<span class="zh" lang="zh-Hans">苗博</span></h1>
+    <p class="role"><b>Postdoctoral Researcher</b><br>Australian Institute for Machine Learning, Adelaide University</p>
+
+    <p class="profile-links">
+      <a href="https://scholar.google.com/citations?user=AJnEdGoAAAAJ&amp;hl=en">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3 1.5 9 12 15l8.5-4.86V16H22V9L12 3Zm-6.5 9.7v3.55C5.5 18.1 8.4 20 12 20s6.5-1.9 6.5-3.75V12.7L12 16.4l-6.5-3.7Z"/></svg>Google Scholar</a>
+      <a href="https://github.com/bo-miao">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
+    </p>
+
+    <div class="bio">
+      <p>I am a postdoctoral researcher at the Centre for Augmented Reasoning, Australian Institute for Machine Learning (AIML), working with <a href="https://researchers.adelaide.edu.au/profile/anton.vandenhengel">Anton van den Hengel</a> and <a href="https://researchers.adelaide.edu.au/profile/feras.dayoub">Feras Dayoub</a>. I received my Ph.D. in Computer Science from The University of Western Australia, supervised by <a href="https://research-repository.uwa.edu.au/en/persons/ajmal-mian">Ajmal Mian</a>, <a href="https://research-repository.uwa.edu.au/en/persons/mohammed-bennamoun">Mohammed Bennamoun</a>, and <a href="https://experts.griffith.edu.au/19112-yongsheng-gao">Yongsheng Gao</a>.</p>
+      <p>My research interests include <b>embodied AI</b>, <b>vision-and-language</b>, <b>video understanding</b>, and <b>human–computer interaction</b>.</p>
+      <p class="note">I am always happy to discuss research and potential collaborations. Please feel free to reach out by <a href="mailto:bomiaobbb@gmail.com">email</a>.</p>
+    </div>
+  </div>
+  <img class="portrait" src="images/web/profile.jpg" alt="Portrait of Bo Miao" width="400" height="500" fetchpriority="high">
+</header>
+
+<!-- ================= News ================= -->
+<section class="wrap section" id="news">
+  <div class="section-head"><h2>News</h2></div>
+  <ul class="news" tabindex="0" aria-label="News">
+    <li><time datetime="2026-09">Sep 2026</time><span>Our paper <a href="https://arxiv.org/abs/2602.02220">LangMap: A Human-Verified Benchmark for Hierarchical Open-Vocabulary Goal Navigation</a> was accepted to <b>NeurIPS&nbsp;2026</b> (Evaluations &amp; Datasets Track).</span></li>
+    <li><time datetime="2026-01">Jan 2026</time><span>Our paper <a href="https://arxiv.org/abs/2603.00144">Disentangled Hierarchical VAE for 3D Human-Human Interaction Generation</a> was accepted to <b>ICLR&nbsp;2026</b>.</span></li>
+    <li><time datetime="2025-09">Sep 2025</time><span>Our paper <a href="https://openreview.net/pdf?id=hFyIIqmcqf">CymbaDiff: Structured Spatial Diffusion for Sketch-based 3D Semantic Urban Scene Generation</a> was accepted to <b>NeurIPS&nbsp;2025</b>.</span></li>
+    <li><time datetime="2025-06">Jun 2025</time><span>Our paper <a href="https://doi.org/10.1109/TMM.2025.3581797">Context-Enhanced Video Moment Retrieval with Large Language Models</a> was accepted to <b>IEEE&nbsp;TMM</b>.</span></li>
+    <li><time datetime="2025-04">Apr 2025</time><span>Our paper <a href="https://www.ijcai.org/proceedings/2025/0180.pdf">Denoise-then-Retrieve: Text-Conditioned Video Denoising for Video Moment Retrieval</a> was accepted to <b>IJCAI&nbsp;2025</b>.</span></li>
+    <li><time datetime="2024-09">Sep 2024</time><span>Our paper <a href="https://arxiv.org/abs/2410.20508">Referring Human Pose and Mask Estimation in the Wild</a> was accepted to <b>NeurIPS&nbsp;2024</b>.</span></li>
+    <li><time datetime="2024-06">Jun 2024</time><span>Our paper <a href="https://doi.org/10.1109/TCSVT.2024.3419119">Temporally Consistent Referring Video Object Segmentation with Hybrid Memory</a> was accepted to <b>IEEE&nbsp;TCSVT</b>.</span></li>
+    <li><time datetime="2024-03">Mar 2024</time><span>Our paper <a href="https://ieeexplore.ieee.org/document/10486830">Region Aware Video Object Segmentation with Deep Motion Modeling</a> was accepted to <b>IEEE&nbsp;TIP</b>.</span></li>
+  </ul>
+</section>
+
+<!-- ================= Publications ================= -->
+<section class="wrap section" id="publications">
+  <div class="section-head">
+    <h2>Publications</h2>
+    <p class="section-note">Full list on <a href="https://scholar.google.com/citations?user=AJnEdGoAAAAJ&amp;hl=en">Google Scholar</a></p>
+  </div>
+
+  <ol class="pubs">
+    <li class="pub">
+      <figure class="pub-thumb"><img src="images/web/langmap.webp" alt="LangMap overview: natural-language goals grounded at room, region and instance levels" width="720" height="346" loading="lazy"></figure>
+      <div>
+        <h3 class="pub-title">LangMap: A Human-Verified Benchmark for Hierarchical Open-Vocabulary Goal Navigation</h3>
+        <p class="pub-authors"><b>Bo Miao</b>, Weijia Liu, Jun Luo, Lachlan Shinnick, Jian Liu, Thomas Hamilton-Smith, Yuhe Yang, Zijie Wu, Vanja Videnovic, Feras Dayoub, Anton van den Hengel</p>
+        <p class="pub-venue"><span class="tag">NeurIPS 2026</span><i>Advances in Neural Information Processing Systems (Evaluations &amp; Datasets Track)</i></p>
+        <p class="pub-links"><a href="https://arxiv.org/abs/2602.02220">Paper</a><a href="https://bo-miao.github.io/LangMap/">Project Page</a><a href="https://github.com/bo-miao/LangMap">Code</a><a href="https://huggingface.co/spaces/bo-miao/LangMap">Demo</a></p>
+      </div>
+    </li>
+
+    <li class="pub">
+      <figure class="pub-thumb"><img src="images/web/dhvae.webp" alt="DHVAE architecture for 3D human–human interaction generation" width="720" height="237" loading="lazy"></figure>
+      <div>
+        <h3 class="pub-title">Disentangled Hierarchical VAE for 3D Human-Human Interaction Generation</h3>
+        <p class="pub-authors">Zichen Geng, Zeeshan Hayder, <b>Bo Miao</b>, Jian Liu, Wei Liu, Ajmal Mian</p>
+        <p class="pub-venue"><span class="tag">ICLR 2026</span><i>International Conference on Learning Representations</i></p>
+        <p class="pub-links"><a href="https://arxiv.org/abs/2603.00144">Paper</a><a href="https://github.com/ZenGengChin/dhvae-official">Code</a></p>
+      </div>
+    </li>
+
+    <li class="pub">
+      <figure class="pub-thumb"><img src="images/web/cymbadiff.webp" alt="CymbaDiff pipeline for sketch-based 3D semantic urban scene generation" width="720" height="157" loading="lazy"></figure>
+      <div>
+        <h3 class="pub-title">CymbaDiff: Structured Spatial Diffusion for Sketch-based 3D Semantic Urban Scene Generation</h3>
+        <p class="pub-authors">Li Liang, <b>Bo Miao</b>, Xinyu Wang, Naveed Akhtar, Jordan Vice, Ajmal Mian</p>
+        <p class="pub-venue"><span class="tag">NeurIPS 2025</span><i>Advances in Neural Information Processing Systems</i></p>
+        <p class="pub-links"><a href="https://openreview.net/pdf?id=hFyIIqmcqf">Paper</a><a href="https://github.com/Lillian-research-hub/CymbaDiff">Code</a></p>
+      </div>
+    </li>
+    <li class="pub">
+      <figure class="pub-thumb"><img src="images/web/cevmr.webp" alt="Context-enhanced video moment retrieval with a multimodal LLM" width="667" height="253" loading="lazy"></figure>
+      <div>
+        <h3 class="pub-title">Context-Enhanced Video Moment Retrieval with Large Language Models</h3>
+        <p class="pub-authors">Weijia Liu, <b>Bo Miao</b>, Jiuxin Cao, Xuelin Zhu, Jiawei Ge, Bo Liu, Mehwish Nasim, Ajmal Mian</p>
+        <p class="pub-venue"><span class="tag">TMM 2025</span><i>IEEE Transactions on Multimedia</i></p>
+        <p class="pub-links"><a href="https://doi.org/10.1109/TMM.2025.3581797">Paper</a></p>
+      </div>
+    </li>
+
+    <li class="pub">
+      <figure class="pub-thumb"><img src="images/web/denoise_retrieve.webp" alt="Alignment scores of relevant and noisy clips in Denoise-then-Retrieve" width="720" height="201" loading="lazy"></figure>
+      <div>
+        <h3 class="pub-title">Denoise-then-Retrieve: Text-Conditioned Video Denoising for Video Moment Retrieval</h3>
+        <p class="pub-authors">Weijia Liu, Jiuxin Cao, <b>Bo Miao</b>, Zhiheng Fu, Xuelin Zhu, Jiawei Ge, Bo Liu, Mehwish Nasim, Ajmal Mian</p>
+        <p class="pub-venue"><span class="tag">IJCAI 2025</span><i>International Joint Conference on Artificial Intelligence</i></p>
+        <p class="pub-links"><a href="https://www.ijcai.org/proceedings/2025/0180.pdf">Paper</a></p>
+      </div>
+    </li>
+
+    <li class="pub">
+      <figure class="pub-thumb"><img src="images/web/rhpm.webp" alt="R-HPM predicts pose and mask for the person referred to by text, scribble or point prompts" width="720" height="265" loading="lazy"></figure>
+      <div>
+        <h3 class="pub-title">Referring Human Pose and Mask Estimation in the Wild</h3>
+        <p class="pub-authors"><b>Bo Miao</b>, Mingtao Feng, Zijie Wu, Mohammed Bennamoun, Yongsheng Gao, Ajmal Mian</p>
+        <p class="pub-venue"><span class="tag">NeurIPS 2024</span><i>Advances in Neural Information Processing Systems</i></p>
+        <p class="pub-links"><a href="https://arxiv.org/abs/2410.20508">Paper</a><a href="https://github.com/bo-miao/RefHuman">Code</a></p>
+      </div>
+    </li>
+
+    <li class="pub">
+      <figure class="pub-thumb"><img src="images/web/ravos.webp" alt="Region-aware video object segmentation with motion path memory" width="720" height="412" loading="lazy"></figure>
+      <div>
+        <h3 class="pub-title">Region Aware Video Object Segmentation with Deep Motion Modeling</h3>
+        <p class="pub-authors"><b>Bo Miao</b>, Mohammed Bennamoun, Yongsheng Gao, Ajmal Mian</p>
+        <p class="pub-venue"><span class="tag">TIP 2024</span><i>IEEE Transactions on Image Processing</i></p>
+        <p class="pub-links"><a href="https://ieeexplore.ieee.org/document/10486830">Paper</a></p>
+      </div>
+    </li>
+
+    <li class="pub">
+      <figure class="pub-thumb"><img src="images/web/htr.webp" alt="Hybrid memory for temporally consistent referring video object segmentation" width="720" height="287" loading="lazy"></figure>
+      <div>
+        <h3 class="pub-title">Temporally Consistent Referring Video Object Segmentation with Hybrid Memory</h3>
+        <p class="pub-authors"><b>Bo Miao</b>, Mohammed Bennamoun, Yongsheng Gao, Mubarak Shah, Ajmal Mian</p>
+        <p class="pub-venue"><span class="tag">TCSVT 2024</span><i>IEEE Transactions on Circuits and Systems for Video Technology</i></p>
+        <p class="pub-links"><a href="https://doi.org/10.1109/TCSVT.2024.3419119">Paper</a><a href="https://github.com/bo-miao/HTR">Code</a></p>
+      </div>
+    </li>
+
+    <li class="pub">
+      <figure class="pub-thumb"><img src="images/web/sketch3d.webp" alt="Knowledge-enhanced sketch-guided denoiser for 3D scene generation" width="720" height="379" loading="lazy"></figure>
+      <div>
+        <h3 class="pub-title">External Knowledge Enhanced 3D Scene Generation from Sketch</h3>
+        <p class="pub-authors">Zijie Wu, Mingtao Feng, Yaonan Wang, He Xie, Weisheng Dong, <b>Bo Miao</b>, Ajmal Mian</p>
+        <p class="pub-venue"><span class="tag">ECCV 2024</span><i>European Conference on Computer Vision</i></p>
+        <p class="pub-links"><a href="https://arxiv.org/abs/2403.14121">Paper</a></p>
+      </div>
+    </li>
+
+    <li class="pub">
+      <figure class="pub-thumb"><img src="images/web/sgmg.webp" alt="SgMg: spectrum-guided multi-granularity referring video object segmentation" width="720" height="311" loading="lazy"></figure>
+      <div>
+        <h3 class="pub-title">Spectrum-guided Multi-granularity Referring Video Object Segmentation</h3>
+        <p class="pub-authors"><b>Bo Miao</b>, Mohammed Bennamoun, Yongsheng Gao, Ajmal Mian</p>
+        <p class="pub-venue"><span class="tag">ICCV 2023</span><i>IEEE/CVF International Conference on Computer Vision</i></p>
+        <p class="pub-links"><a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Miao_Spectrum-guided_Multi-granularity_Referring_Video_Object_Segmentation_ICCV_2023_paper.pdf">Paper</a><a href="https://github.com/bo-miao/SgMg">Code</a></p>
+      </div>
+    </li>
+
+    <li class="pub">
+      <figure class="pub-thumb"><img src="images/web/mamp.webp" alt="Motion-aware mask propagation for self-supervised video object segmentation" width="720" height="265" loading="lazy"></figure>
+      <div>
+        <h3 class="pub-title">Self-Supervised Video Object Segmentation by Motion-Aware Mask Propagation</h3>
+        <p class="pub-authors"><b>Bo Miao</b>, Mohammed Bennamoun, Yongsheng Gao, Ajmal Mian</p>
+        <p class="pub-venue"><span class="tag">ICME 2022</span><i>IEEE International Conference on Multimedia and Expo</i><span class="badge">Oral</span></p>
+        <p class="pub-links"><a href="https://arxiv.org/abs/2107.12569">Paper</a><a href="https://github.com/bo-miao/MAMP">Code</a></p>
+      </div>
+    </li>
+
+    <li class="pub">
+      <figure class="pub-thumb"><img src="images/web/ots.webp" alt="Object-to-scene network for indoor scene recognition" width="704" height="234" loading="lazy"></figure>
+      <div>
+        <h3 class="pub-title">Object-to-Scene: Learning to Transfer Object Knowledge to Indoor Scene Recognition</h3>
+        <p class="pub-authors"><b>Bo Miao</b>, Liguang Zhou, Ajmal Mian, Tin Lun Lam, Yangsheng Xu</p>
+        <p class="pub-venue"><span class="tag">IROS 2021</span><i>IEEE/RSJ International Conference on Intelligent Robots and Systems</i></p>
+        <p class="pub-links"><a href="https://arxiv.org/abs/2108.00399">Paper</a><a href="https://github.com/FreeformRobotics/OTS">Code</a></p>
+      </div>
+    </li>
+  </ol>
+
+</section>
+
+<!-- ================= Honours ================= -->
+<section class="wrap section" id="honours">
+  <div class="section-head"><h2>Honours &amp; Awards</h2></div>
+  <ul class="plain">
+    <li><b>Dean’s List Honourable Mention</b> for Ph.D. thesis, The University of Western Australia, 2025</li>
+    <li><b>Third Place</b>, Large-scale Video Object Segmentation Challenge, Referring VOS Track, ICCV 2023</li>
+    <li><b>Excellent Presentation Award</b>, UWA CSSE HDR Conference</li>
+    <li><b>Best Paper Finalist</b>, ICCSS 2017</li>
+  </ul>
+</section>
+
+<!-- ================= Service ================= -->
+<section class="wrap section" id="service">
+  <div class="section-head"><h2>Academic Service</h2></div>
+  <dl class="rows">
+    <div><dt>Guest Editor</dt><dd>Special Issue on <a href="https://www.mdpi.com/journal/robotics/special_issues/FZ4L7VI9U2">Foundation Models for Robotics</a>, <i>Robotics</i></dd></div>
+    <div><dt>Session Chair</dt><dd>IROS 2021, YAC 2026 <span class="aside">(41st Youth Academic Annual Conference of Chinese Association of Automation)</span></dd></div>
+    <div><dt>Conference Reviewer</dt><dd>NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IROS, ACCV, DICTA</dd></div>
+    <div><dt>Journal Reviewer</dt><dd>IEEE TPAMI, IJCV, IEEE TIP, IEEE TMM, IEEE TCSVT, Neurocomputing</dd></div>
+  </dl>
+</section>
+
+</main>
+
+<footer class="wrap site-footer">
+  <p>© 2026 Bo Miao · Last updated September 2026</p>
+</footer>
+
+<script>
+  // Highlight the nav link of the section being read (or the one just clicked).
+  (function () {
+    var ids = ['about', 'news', 'publications', 'honours', 'service'];
+    var links = {};
+    document.querySelectorAll('.nav-links a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+    var clicked = null, pending = false;
+    function setActive(id) {
+      ids.forEach(function (k) { if (links[k]) links[k].classList.toggle('active', k === id); });
+    }
+    function update() {
+      pending = false;
+      if (clicked) return setActive(clicked);
+      var current = ids[0];
+      ids.forEach(function (id) {
+        var s = document.getElementById(id);
+        if (s && s.getBoundingClientRect().top <= 200) current = id;
+      });
+      if (window.scrollY > 0 && window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) current = ids[ids.length - 1];
+      setActive(current);
+    }
+    document.querySelector('.nav-links').addEventListener('click', function (e) {
+      var a = e.target.closest('a');
+      if (a) { clicked = a.getAttribute('href').slice(1); setActive(clicked); }
+    });
+    ['wheel', 'touchmove', 'keydown'].forEach(function (t) {
+      window.addEventListener(t, function () { clicked = null; }, { passive: true });
+    });
+    window.addEventListener('scroll', function () {
+      if (!pending) { pending = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+</script>
+</body>
+</html>
