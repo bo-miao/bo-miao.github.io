@@ -3,7 +3,7 @@
 This directory contains the static project page for:
 
 **LangMap: A Human-Verified Benchmark for Hierarchical Open-Vocabulary Goal Navigation**
-(NeurIPS 2026, Evaluations & Datasets Track)
+(NeurIPS 2026)
 
 LangMap introduces HieraNav, a hierarchical open-vocabulary goal navigation task, and provides human-verified annotations across object, room, region, and instance levels.
 

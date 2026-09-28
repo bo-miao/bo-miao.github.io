@@ -171,14 +171,6 @@ pre.bibtex {
   }
   .venue-badge {
     font-size: 0.95rem;
-    border-radius: 12px;
-    padding: 0.35rem 1rem;
-  }
-  .venue-badge span {
-    display: block;
-  }
-  .venue-badge .venue-sep {
-    display: none;
   }
   .content.has-text-justified {
     text-align: left !important;
