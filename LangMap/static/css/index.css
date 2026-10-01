@@ -16,6 +16,14 @@ body {
   margin-bottom: 1rem !important;
 }
 
+.publication-logo {
+  display: block;
+  width: 260px;
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto 1rem;
+}
+
 .venue-badge {
   display: inline-block;
   margin: 0 0 1.25rem;
