@@ -41,6 +41,13 @@ body {
   display: inline-block;
 }
 
+/* line break after the sixth author only where both lines fit */
+@media (max-width: 899px) {
+  .author-break {
+    display: none;
+  }
+}
+
 .affiliations {
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
